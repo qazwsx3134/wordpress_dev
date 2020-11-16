@@ -1,0 +1,29 @@
+# Don't add the Local settings file to the repository #
+htdocs/wp-local-config.php
+
+# If using SASS to compile stylesheets this saves conflicts, plus there not needed! #
+htdocs/wp-content/themes/YOURTHEME/.sass-cache/*
+
+# ignore everything in the root except the "wp-content" directory.
+htdocs/!wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+htdocs/wp-content/*
+htdocs/!wp-content/mu-plugins/
+htdocs/!wp-content/plugins/
+htdocs/!wp-content/themes/
+
+# ignore these plugins
+htdocs/wp-content/plugins/hello.php
+
+# ignore specific themes
+htdocs/wp-content/themes/twenty*/
+
+# ignore node dependency directories
+htdocs/node_modules/
+
+# ignore log files and databases
+sql/*.log
+sql/*.sql
+sql/*.sqlite
